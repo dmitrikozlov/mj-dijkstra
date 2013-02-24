@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A2B771E16D3577E00E7DA90 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2B771D16D3577E00E7DA90 /* UIKit.framework */; };
+		2A2B772016D3577E00E7DA90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2B771F16D3577E00E7DA90 /* Foundation.framework */; };
+		2A2B772216D3577E00E7DA90 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2B772116D3577E00E7DA90 /* CoreGraphics.framework */; };
+		2A2B772816D3577E00E7DA90 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A2B772616D3577E00E7DA90 /* InfoPlist.strings */; };
+		2A2B772A16D3577E00E7DA90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B772916D3577E00E7DA90 /* main.m */; };
+		2A2B772E16D3577E00E7DA90 /* MJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B772D16D3577E00E7DA90 /* MJAppDelegate.m */; };
+		2A2B773016D3577E00E7DA90 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A2B772F16D3577E00E7DA90 /* Default.png */; };
+		2A2B773216D3577E00E7DA90 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A2B773116D3577E00E7DA90 /* Default@2x.png */; };
+		2A2B773416D3577E00E7DA90 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A2B773316D3577E00E7DA90 /* Default-568h@2x.png */; };
+		2A2B774116D357E800E7DA90 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2B774016D357E800E7DA90 /* SenTestingKit.framework */; };
+		2A2B774216D357E800E7DA90 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2B771D16D3577E00E7DA90 /* UIKit.framework */; };
+		2A2B774316D357E800E7DA90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2B771F16D3577E00E7DA90 /* Foundation.framework */; };
+		2A2B774916D357E800E7DA90 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A2B774716D357E800E7DA90 /* InfoPlist.strings */; };
+		2A2B774C16D357E800E7DA90 /* dijkstraLogicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B774B16D357E800E7DA90 /* dijkstraLogicTests.m */; };
+		2A8B682C16D5EFEF00676E93 /* MJPriorityDictionary.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B682B16D5EFEF00676E93 /* MJPriorityDictionary.mm */; };
+		2A8B682D16D5EFEF00676E93 /* MJPriorityDictionary.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B682B16D5EFEF00676E93 /* MJPriorityDictionary.mm */; };
+		2AD31E0D16D44DE900F10451 /* MJDijkstra.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD31E0916D44DE900F10451 /* MJDijkstra.m */; };
+		2AD31E0E16D44DE900F10451 /* MJDijkstra.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD31E0916D44DE900F10451 /* MJDijkstra.m */; };
+		2AD31E0F16D44DE900F10451 /* MJPriorityQueue.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2AD31E0C16D44DE900F10451 /* MJPriorityQueue.mm */; };
+		2AD31E1016D44DE900F10451 /* MJPriorityQueue.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2AD31E0C16D44DE900F10451 /* MJPriorityQueue.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A2B771A16D3577E00E7DA90 /* dijkstra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dijkstra.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A2B771D16D3577E00E7DA90 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2A2B771F16D3577E00E7DA90 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2A2B772116D3577E00E7DA90 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2A2B772516D3577E00E7DA90 /* dijkstra-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "dijkstra-Info.plist"; sourceTree = "<group>"; };
+		2A2B772716D3577E00E7DA90 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2A2B772916D3577E00E7DA90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A2B772B16D3577E00E7DA90 /* dijkstra-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dijkstra-Prefix.pch"; sourceTree = "<group>"; };
+		2A2B772C16D3577E00E7DA90 /* MJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJAppDelegate.h; sourceTree = "<group>"; };
+		2A2B772D16D3577E00E7DA90 /* MJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJAppDelegate.m; sourceTree = "<group>"; };
+		2A2B772F16D3577E00E7DA90 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2A2B773116D3577E00E7DA90 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		2A2B773316D3577E00E7DA90 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2A2B773F16D357E800E7DA90 /* dijkstraLogicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dijkstraLogicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A2B774016D357E800E7DA90 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		2A2B774616D357E800E7DA90 /* dijkstraLogicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "dijkstraLogicTests-Info.plist"; sourceTree = "<group>"; };
+		2A2B774816D357E800E7DA90 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2A2B774A16D357E800E7DA90 /* dijkstraLogicTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dijkstraLogicTests.h; sourceTree = "<group>"; };
+		2A2B774B16D357E800E7DA90 /* dijkstraLogicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dijkstraLogicTests.m; sourceTree = "<group>"; };
+		2A2B774D16D357E800E7DA90 /* dijkstraLogicTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dijkstraLogicTests-Prefix.pch"; sourceTree = "<group>"; };
+		2A8B682A16D5EFEE00676E93 /* MJPriorityDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPriorityDictionary.h; sourceTree = "<group>"; };
+		2A8B682B16D5EFEF00676E93 /* MJPriorityDictionary.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MJPriorityDictionary.mm; sourceTree = "<group>"; };
+		2A8B682E16D5F38A00676E93 /* MJHashing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJHashing.h; sourceTree = "<group>"; };
+		2A8B683016D5F43000676E93 /* MJComparing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJComparing.h; sourceTree = "<group>"; };
+		2AD31E0816D44DE900F10451 /* MJDijkstra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJDijkstra.h; sourceTree = "<group>"; };
+		2AD31E0916D44DE900F10451 /* MJDijkstra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJDijkstra.m; sourceTree = "<group>"; };
+		2AD31E0B16D44DE900F10451 /* MJPriorityQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPriorityQueue.h; sourceTree = "<group>"; };
+		2AD31E0C16D44DE900F10451 /* MJPriorityQueue.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MJPriorityQueue.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A2B771716D3577E00E7DA90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A2B771E16D3577E00E7DA90 /* UIKit.framework in Frameworks */,
+				2A2B772016D3577E00E7DA90 /* Foundation.framework in Frameworks */,
+				2A2B772216D3577E00E7DA90 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A2B773B16D357E800E7DA90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A2B774116D357E800E7DA90 /* SenTestingKit.framework in Frameworks */,
+				2A2B774216D357E800E7DA90 /* UIKit.framework in Frameworks */,
+				2A2B774316D357E800E7DA90 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A2B771116D3577E00E7DA90 = {
+			isa = PBXGroup;
+			children = (
+				2A2B772316D3577E00E7DA90 /* dijkstra */,
+				2A2B774416D357E800E7DA90 /* dijkstraLogicTests */,
+				2A2B771C16D3577E00E7DA90 /* Frameworks */,
+				2A2B771B16D3577E00E7DA90 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A2B771B16D3577E00E7DA90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A2B771A16D3577E00E7DA90 /* dijkstra.app */,
+				2A2B773F16D357E800E7DA90 /* dijkstraLogicTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A2B771C16D3577E00E7DA90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A2B771D16D3577E00E7DA90 /* UIKit.framework */,
+				2A2B771F16D3577E00E7DA90 /* Foundation.framework */,
+				2A2B772116D3577E00E7DA90 /* CoreGraphics.framework */,
+				2A2B774016D357E800E7DA90 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A2B772316D3577E00E7DA90 /* dijkstra */ = {
+			isa = PBXGroup;
+			children = (
+				2A2B775416D3592400E7DA90 /* implementation */,
+				2A2B772C16D3577E00E7DA90 /* MJAppDelegate.h */,
+				2A2B772D16D3577E00E7DA90 /* MJAppDelegate.m */,
+				2A2B772416D3577E00E7DA90 /* Supporting Files */,
+			);
+			path = dijkstra;
+			sourceTree = "<group>";
+		};
+		2A2B772416D3577E00E7DA90 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A2B772516D3577E00E7DA90 /* dijkstra-Info.plist */,
+				2A2B772616D3577E00E7DA90 /* InfoPlist.strings */,
+				2A2B772916D3577E00E7DA90 /* main.m */,
+				2A2B772B16D3577E00E7DA90 /* dijkstra-Prefix.pch */,
+				2A2B772F16D3577E00E7DA90 /* Default.png */,
+				2A2B773116D3577E00E7DA90 /* Default@2x.png */,
+				2A2B773316D3577E00E7DA90 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A2B774416D357E800E7DA90 /* dijkstraLogicTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A2B774A16D357E800E7DA90 /* dijkstraLogicTests.h */,
+				2A2B774B16D357E800E7DA90 /* dijkstraLogicTests.m */,
+				2A2B774516D357E800E7DA90 /* Supporting Files */,
+			);
+			path = dijkstraLogicTests;
+			sourceTree = "<group>";
+		};
+		2A2B774516D357E800E7DA90 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A2B774616D357E800E7DA90 /* dijkstraLogicTests-Info.plist */,
+				2A2B774716D357E800E7DA90 /* InfoPlist.strings */,
+				2A2B774D16D357E800E7DA90 /* dijkstraLogicTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A2B775416D3592400E7DA90 /* implementation */ = {
+			isa = PBXGroup;
+			children = (
+				2A8B683016D5F43000676E93 /* MJComparing.h */,
+				2A8B682E16D5F38A00676E93 /* MJHashing.h */,
+				2A8B682A16D5EFEE00676E93 /* MJPriorityDictionary.h */,
+				2A8B682B16D5EFEF00676E93 /* MJPriorityDictionary.mm */,
+				2AD31E0816D44DE900F10451 /* MJDijkstra.h */,
+				2AD31E0916D44DE900F10451 /* MJDijkstra.m */,
+				2AD31E0B16D44DE900F10451 /* MJPriorityQueue.h */,
+				2AD31E0C16D44DE900F10451 /* MJPriorityQueue.mm */,
+			);
+			path = implementation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A2B771916D3577E00E7DA90 /* dijkstra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A2B773716D3577E00E7DA90 /* Build configuration list for PBXNativeTarget "dijkstra" */;
+			buildPhases = (
+				2A2B771616D3577E00E7DA90 /* Sources */,
+				2A2B771716D3577E00E7DA90 /* Frameworks */,
+				2A2B771816D3577E00E7DA90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dijkstra;
+			productName = dijkstra;
+			productReference = 2A2B771A16D3577E00E7DA90 /* dijkstra.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A2B773E16D357E800E7DA90 /* dijkstraLogicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A2B774E16D357E800E7DA90 /* Build configuration list for PBXNativeTarget "dijkstraLogicTests" */;
+			buildPhases = (
+				2A2B773A16D357E800E7DA90 /* Sources */,
+				2A2B773B16D357E800E7DA90 /* Frameworks */,
+				2A2B773C16D357E800E7DA90 /* Resources */,
+				2A2B773D16D357E800E7DA90 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dijkstraLogicTests;
+			productName = dijkstraLogicTests;
+			productReference = 2A2B773F16D357E800E7DA90 /* dijkstraLogicTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A2B771216D3577E00E7DA90 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MJ;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Dmitri Kozlov";
+			};
+			buildConfigurationList = 2A2B771516D3577E00E7DA90 /* Build configuration list for PBXProject "dijkstra" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2A2B771116D3577E00E7DA90;
+			productRefGroup = 2A2B771B16D3577E00E7DA90 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A2B771916D3577E00E7DA90 /* dijkstra */,
+				2A2B773E16D357E800E7DA90 /* dijkstraLogicTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A2B771816D3577E00E7DA90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A2B772816D3577E00E7DA90 /* InfoPlist.strings in Resources */,
+				2A2B773016D3577E00E7DA90 /* Default.png in Resources */,
+				2A2B773216D3577E00E7DA90 /* Default@2x.png in Resources */,
+				2A2B773416D3577E00E7DA90 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A2B773C16D357E800E7DA90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A2B774916D357E800E7DA90 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A2B773D16D357E800E7DA90 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A2B771616D3577E00E7DA90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A2B772A16D3577E00E7DA90 /* main.m in Sources */,
+				2A2B772E16D3577E00E7DA90 /* MJAppDelegate.m in Sources */,
+				2AD31E0D16D44DE900F10451 /* MJDijkstra.m in Sources */,
+				2AD31E0F16D44DE900F10451 /* MJPriorityQueue.mm in Sources */,
+				2A8B682C16D5EFEF00676E93 /* MJPriorityDictionary.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A2B773A16D357E800E7DA90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A2B774C16D357E800E7DA90 /* dijkstraLogicTests.m in Sources */,
+				2AD31E0E16D44DE900F10451 /* MJDijkstra.m in Sources */,
+				2AD31E1016D44DE900F10451 /* MJPriorityQueue.mm in Sources */,
+				2A8B682D16D5EFEF00676E93 /* MJPriorityDictionary.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2A2B772616D3577E00E7DA90 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A2B772716D3577E00E7DA90 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2A2B774716D357E800E7DA90 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A2B774816D357E800E7DA90 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A2B773516D3577E00E7DA90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2A2B773616D3577E00E7DA90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A2B773816D3577E00E7DA90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dijkstra/dijkstra-Prefix.pch";
+				INFOPLIST_FILE = "dijkstra/dijkstra-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2A2B773916D3577E00E7DA90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dijkstra/dijkstra-Prefix.pch";
+				INFOPLIST_FILE = "dijkstra/dijkstra-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2A2B774F16D357E800E7DA90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dijkstraLogicTests/dijkstraLogicTests-Prefix.pch";
+				INFOPLIST_FILE = "dijkstraLogicTests/dijkstraLogicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2A2B775016D357E800E7DA90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dijkstraLogicTests/dijkstraLogicTests-Prefix.pch";
+				INFOPLIST_FILE = "dijkstraLogicTests/dijkstraLogicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A2B771516D3577E00E7DA90 /* Build configuration list for PBXProject "dijkstra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A2B773516D3577E00E7DA90 /* Debug */,
+				2A2B773616D3577E00E7DA90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A2B773716D3577E00E7DA90 /* Build configuration list for PBXNativeTarget "dijkstra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A2B773816D3577E00E7DA90 /* Debug */,
+				2A2B773916D3577E00E7DA90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A2B774E16D357E800E7DA90 /* Build configuration list for PBXNativeTarget "dijkstraLogicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A2B774F16D357E800E7DA90 /* Debug */,
+				2A2B775016D357E800E7DA90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A2B771216D3577E00E7DA90 /* Project object */;
+}
