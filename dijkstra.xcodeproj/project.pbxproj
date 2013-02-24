@@ -52,8 +52,6 @@
 		2A2B774D16D357E800E7DA90 /* dijkstraLogicTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dijkstraLogicTests-Prefix.pch"; sourceTree = "<group>"; };
 		2A8B682A16D5EFEE00676E93 /* MJPriorityDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPriorityDictionary.h; sourceTree = "<group>"; };
 		2A8B682B16D5EFEF00676E93 /* MJPriorityDictionary.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MJPriorityDictionary.mm; sourceTree = "<group>"; };
-		2A8B682E16D5F38A00676E93 /* MJHashing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJHashing.h; sourceTree = "<group>"; };
-		2A8B683016D5F43000676E93 /* MJComparing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJComparing.h; sourceTree = "<group>"; };
 		2AD31E0816D44DE900F10451 /* MJDijkstra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJDijkstra.h; sourceTree = "<group>"; };
 		2AD31E0916D44DE900F10451 /* MJDijkstra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJDijkstra.m; sourceTree = "<group>"; };
 		2AD31E0B16D44DE900F10451 /* MJPriorityQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPriorityQueue.h; sourceTree = "<group>"; };
@@ -162,8 +160,6 @@
 		2A2B775416D3592400E7DA90 /* implementation */ = {
 			isa = PBXGroup;
 			children = (
-				2A8B683016D5F43000676E93 /* MJComparing.h */,
-				2A8B682E16D5F38A00676E93 /* MJHashing.h */,
 				2A8B682A16D5EFEE00676E93 /* MJPriorityDictionary.h */,
 				2A8B682B16D5EFEF00676E93 /* MJPriorityDictionary.mm */,
 				2AD31E0816D44DE900F10451 /* MJDijkstra.h */,

@@ -16,7 +16,7 @@
 struct MJLessThan
 {
     //returns true if self is to be placed earlier than obj in a strict weak ordering operation.
-    bool operator()(ValType const &lhs, ValType const &rhs)
+    bool operator()(id const &lhs, id const &rhs)
     {
         return [lhs compare:rhs] == NSOrderedAscending;
     }
@@ -24,7 +24,7 @@ struct MJLessThan
 
 @implementation MJPriorityQueue
 {
-    std::priority_queue<ValType, std::vector<ValType>, MJLessThan > _queue;
+    std::priority_queue<id, std::vector<id>, MJLessThan > _queue;
 }
 
 +(MJPriorityQueue*)queue
@@ -65,7 +65,7 @@ struct MJLessThan
     return _queue.top();
 }
 
--(void)push:(ValType)obj
+-(void)push:(id)obj
 {
     _queue.push(obj);
 }

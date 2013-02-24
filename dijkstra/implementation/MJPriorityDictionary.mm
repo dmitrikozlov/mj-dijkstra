@@ -34,14 +34,12 @@ typedef std::vector<KVPair> Order;
 //returns true if self is to be placed earlier than obj in a strict weak ordering operation.
 bool val_compare_less(KVPair const &lhs, KVPair const &rhs)
 {
-    //BOOL res = [(id<MJComparing>)lhs.second compare:rhs.second] == NSOrderedAscending;
-    //NSLog(@"comparing %d and %d, res %@", [lhs.second integerValue], [rhs.second integerValue], res?@"Y":@"N");
-    return [(id<MJComparing>)lhs.second compare:rhs.second] == NSOrderedAscending;
+    return [lhs.second compare:rhs.second] == NSOrderedAscending;
 }
 
 bool val_compare_more(KVPair const &lhs, KVPair const &rhs)
 {
-    return [(id<MJComparing>)lhs.second compare:rhs.second] == NSOrderedDescending;
+    return [lhs.second compare:rhs.second] == NSOrderedDescending;
 }
 
 @implementation MJPriorityDictionary

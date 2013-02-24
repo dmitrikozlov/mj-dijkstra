@@ -7,12 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MJComparing.h"
-#import "MJHashing.h"
 
-//typedef id<NSObject, NSCopying> KeyType;
 typedef id KeyType;
-//typedef id<NSObject, MJComparing> ObjType;
 typedef id ObjType;
 /*typedef struct
 {

@@ -11,10 +11,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MJComparing.h"
-
-//typedef id<MJComparing, NSObject> ValType;
-typedef id ValType;
 
 @interface MJPriorityQueue : NSObject
 
@@ -26,7 +22,7 @@ typedef id ValType;
 -(size_t)size;
 -(id)top;
 // Pushes obj into the queue. Obj should not be mutable.
--(void)push:(ValType)obj;
+-(void)push:(id)obj;
 -(void)pop;
 
 @end
