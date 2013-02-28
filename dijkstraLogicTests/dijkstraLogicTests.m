@@ -244,7 +244,7 @@
  <pre> G = {'s':{'u':10, 'x':5}, 'u':{'v':1, 'x':2}, 'v':{'y':4}, 'x':{'u':3, 'v':9, 'y':2}, 'y':{'s':7, 'v':6}} </pre>
  The shortest path from s to v is ['s', 'x', 'u', 'v'] and has length 9.
  */
--(void)testSortestPath
+-(void)testShortestPath
 {
     NSDictionary *G = @{@"s":@{@"u":@10, @"x":@5},
                         @"u":@{@"v":@1, @"x":@2},
@@ -284,6 +284,28 @@
     MJDijkstraSolution res = Dijkstra(G, start, end);
     
     STAssertTrue([res.distances[end] integerValue] == 9, @"Wrong length of a found path.");
+}
+
+-(void)testDijkstraSameLength
+{
+    NSDictionary *G = @{@"s":@{@"u":@1, @"x":@1},
+                        @"u":@{@"v":@1, @"x":@1},
+                        @"v":@{@"y":@1},
+                        @"x":@{@"u":@1, @"v":@1, @"y":@1},
+                        @"y":@{@"s":@1, @"v":@1}};
+    
+    NSString *start = @"s";
+    NSString *end = @"v";
+    
+    //NSArray *answer = @[@"s", @"x", @"u", @"v"];
+    MJDijkstraSolution res = Dijkstra(G, start, end);
+    NSArray *path = shortestPath(G, start, end);
+
+    for (NSString *v in path)
+        NSLog(@"Vertex %@", v);
+    
+    NSLog(@"Path length: %d", [res.distances[end] integerValue]);
+    //STAssertTrue([res.distances[end] integerValue] == 9, @"Wrong length of a found path.");
 }
 
 @end
